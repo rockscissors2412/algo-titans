@@ -4,7 +4,7 @@ def bot_reply(user_msg):
     if "hello" in msg or "hi" in msg:
         return "Hello! How can I help you today?"
     elif "refund" in msg:
-        return "I can help with refunds. Can you share your order ID?"
+        return "I can help with accounts. Can you share your account number/ID?"
     elif "human" in msg or "agent" in msg:
         return "Connecting you to a live agent... Please click the Video button."
     else:
@@ -40,3 +40,21 @@ if __name__ == "__main__":
   </script>
 </body>
 </html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Support Agent</title>
+  <script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.2/dist/peerjs.min.js"></script>
+</head>
+<body>
+  <h1>Agent Console</h1>
+
+  <video id="myVideo" autoplay playsinline muted width="200"></video>
+  <video id="remoteVideo" autoplay playsinline width="200"></video>
+
+  <script src="/static/script.js"></script>
+  <script>
+    setupAgent();
+  </script>
+</body>
+</html>
