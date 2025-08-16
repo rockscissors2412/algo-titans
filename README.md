@@ -25,21 +25,28 @@ if __name__ == "__main__":
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Support Agent</title>
+  <title>Customer Support Chatbot</title>
   <script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.2/dist/peerjs.min.js"></script>
 </head>
 <body>
-  <h1>Agent Console</h1>
+  <h1>Customer Chatbot</h1>
 
+  <div id="chatbox" style="border:1px solid #ccc; padding:10px; width:300px; height:200px; overflow:auto;"></div>
+  <input id="msg" type="text" placeholder="Type a message..." />
+  <button onclick="sendMsg()">Send</button>
+  <button onclick="startVideo()">Video with Agent</button>
+
+  <br><br>
   <video id="myVideo" autoplay playsinline muted width="200"></video>
   <video id="remoteVideo" autoplay playsinline width="200"></video>
 
   <script src="/static/script.js"></script>
   <script>
-    setupAgent();
+    setupCustomer();
   </script>
 </body>
-</html
+</html>
+#support_page
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,4 +64,4 @@ if __name__ == "__main__":
     setupAgent();
   </script>
 </body>
-</html>
+</html
